@@ -1,0 +1,48 @@
+== ECC
+
+Sistema personalizado para auxílio na secretaria do Encontro de Casais com Cristo.
+
+== Encontristas:
+
+=== Atributos 
+  
+  Endereço, Telefone, Celular, Email, Igreja, Casal, Obs. Saúde,
+  Qtd. Filhos, Nome, Nome Completo
+
+=== Menu
+
+* Relação das informações(gerenciamento geral)
+
+* Etiquetas
+
+* Crachás
+
+* Dormitórios
+
+== Equipe:
+
+=== Atributos 
+  
+  Telefone, Celular, Email, Igreja, Nome
+
+=== Menu
+
+* Relação das informações(gerenciamento geral)
+
+* Crachá
+
+* Lava-louça
+
+== Informações Gerais
+
+=== Medidas
+
+* Etiquetas (24,4mm x 66,7mm) ou 92.72px e 253.46px
+
+* Crachás (50,8mm x 88,9mm) ou 193.04px e 337.82px
+
+Obs.: Para transformar mm em px, basta multiplicar por 38 e dividir por 10
+
+== TODO
+
+Criar css de impressão para relações gerais, crachás, etiquetas, dormitórios e lava-louça

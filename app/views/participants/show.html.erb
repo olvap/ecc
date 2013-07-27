@@ -1,0 +1,41 @@
+<h1><%= @participant.name %></h1>
+<br/>
+<p>
+  <b>Nome Completo:</b>
+  <%= @participant.full_name %>
+</p>
+<p>
+  <b>Casal que convidou:</b>
+  <%= @participant.couple %>
+</p>
+<p>
+  <b>Igreja:</b>
+  <%= @participant.church %>
+</p>
+<p>
+  <b>Filhos:</b>
+  <%= @participant.children %>
+</p>
+<p>
+  <b>Telefone:</b>
+  <%= @participant.phone %>
+</p>
+<p>
+  <b>Celular:</b>
+  <%= @participant.cel_phone %>
+</p>
+<p>
+  <b>Email:</b>
+  <%= @participant.email %>
+</p>
+<p>
+  <b>Endereço:</b>
+  <%= @participant.address %>
+</p>
+<p>
+  <b>Obs. de Saúde:</b>
+  <%= @participant.health_obs %>
+</p>
+<br/>
+<%= link_to "Editar", edit_participant_path(@participant), class: "button radius" %>
+<%= link_to "Voltar", participants_path, class: 'button secondary' %>

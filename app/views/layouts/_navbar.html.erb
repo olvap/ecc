@@ -1,0 +1,32 @@
+<nav class="top-bar">
+  <ul class="title-area">
+    <li class="name">
+      <h1><%= link_to "Encontro de Casais com Cristo", participants_path %></a></h1>
+    </li>
+  </ul>
+  <section class="top-bar-section">
+    <ul class="right">
+      <li class="divider"></li>
+      <li class="has-dropdown">
+        <%= link_to "Encontristas", participants_path %>
+        <ul class="dropdown">
+          <li><%= link_to "Gerenciar", participants_path %></li>
+          <li><%= link_to "Etiquetas", tags_participants_path %></li>
+          <li><%= link_to "Crachás", name_tags_participants_path %></li>
+          <li><a href="#">Dormitórios</a></li>
+        </ul>
+      </li>
+      <li class="divider"></li>
+      <li class="has-dropdown">
+        <%= link_to "Equipe", teams_path %>
+        <ul class="dropdown">
+          <li><%= link_to "Gerenciar", teams_path %></li>
+          <li><%= link_to "Crachás", name_tags_teams_path %></li>
+          <li><a href="#">Relação Lava-Louça</a></li>
+        </ul>        
+      </li>
+      <li class="divider"></li>
+      <li><%= link_to "Sair" %></li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,10 @@
+<div class="row">
+  <% @participants.each_with_index do |participant| %>    
+      <div class="tag">
+        <%= participant.name %>
+      </div>
+      <div class="tag">
+        <%= participant.wife_name %>
+      </div>      
+  <% end %>
+</div>  

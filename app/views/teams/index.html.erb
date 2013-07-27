@@ -1,0 +1,26 @@
+<h1>Equipe</h1>
+<%= link_to "Adicionar", new_team_path %>
+<br/><br/>
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Tel.</th>
+      <th>Cel.</th>
+      <th>Igreja</th>
+      <th><th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @teams.each do |team| %>
+      <tr>
+        <td><%= link_to team.name, team_path(team) %></td>
+        <td><%= team.phone %></td>
+        <td><%= team.cel_phone %></td>
+        <td><%= team.church %></td>
+        <td><%= link_to "Editar", edit_team_path(team) %></td>
+        <td><%= link_to 'Apagar', team_path(team), confirm: 'Tem certeza?', method: :delete %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

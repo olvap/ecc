@@ -1,0 +1,29 @@
+<h1><%= @team.name %></h1>
+<br/>
+<p>
+  <b>Igreja:</b>
+  <%= @team.church %>
+</p>
+<p>
+  <b>Telefone:</b>
+  <%= @team.phone %>
+</p>
+<p>
+  <b>Celular:</b>
+  <%= @team.cel_phone %>
+</p>
+<p>
+  <b>Email:</b>
+  <%= @team.email %>
+</p>
+<p>
+  <b>Endereço:</b>
+  <%= @team.address %>
+</p>
+<p>
+  <b>Obs. de Saúde:</b>
+  <%= @team.health_obs %>
+</p>
+<br/>
+<%= link_to "Editar", edit_team_path(@team), class: "button radius" %>
+<%= link_to "Voltar", teams_path, class: 'button secondary' %>

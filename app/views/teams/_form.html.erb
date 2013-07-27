@@ -1,0 +1,57 @@
+<%= form_for @team do |f| %>
+  <%= error_messages_for @team %>
+  
+  <div class="row">
+    <div class="large-4 columns">
+      <%= f.label :name, 'Nome' %>
+      <%= f.text_field :name %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 columns">
+      <%= f.label :phone, 'Telefone' %>
+      <%= f.text_field :phone %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 columns">
+      <%= f.label :cel_phone, 'Celular' %>
+      <%= f.text_field :cel_phone %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 columns">
+      <%= f.label :address, 'Endereço' %>
+      <%= f.text_area :address %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 columns">
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 columns">
+      <%= f.label :church, 'Igreja' %>
+      <%= f.text_field :church %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 columns">
+      <%= f.label :health_obs, 'Obs. de Saúde' %>
+      <%= f.text_area :health_obs %>
+    </div>
+  </div>
+
+  <div class="row collapse">
+    <%= f.submit btn_text, class: "button radius" %>
+    <%= link_to "Cancelar", teams_path, class: 'button secondary' %>
+  </div>
+<% end %>

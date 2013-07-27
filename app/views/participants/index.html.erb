@@ -1,0 +1,28 @@
+<h1>Encontristas</h1>
+<%= link_to "Adicionar", new_participant_path %>
+<br/><br/>
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Casal Acomp.</th>
+      <th>Igreja</th>
+      <th>Tel.</th>
+      <th>Saúde</th>
+      <th><th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @participants.each do |participant| %>
+      <tr>
+        <td><%= link_to participant.name, participant_path(participant) %></td>
+        <td><%= participant.couple %></td>
+        <td><%= participant.church %></td>
+        <td><%= participant.phone %></td>
+        <td><%= participant.health_obs %></td>
+        <td><%= link_to "Editar", edit_participant_path(participant) %></td>
+        <td><%= link_to 'Apagar', participant_path(participant), confirm: 'Tem certeza?', method: :delete %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
