@@ -2,12 +2,13 @@
 
 FactoryGirl.define do
   factory :team do
+    name       { Faker::Name.name }
+    email      { Faker::Internet.email "#{name}" }
+    phone      { Faker::PhoneNumber.phone_number }
+    cel_phone  { Faker::PhoneNumber.phone_number }
+
     address "Rua XYZ"
-    phone "4432-9901"
-    cel_phone "97657-9013"
-    email "telles@ecc.com"
     church "IP Maranata"
     health_obs ""
-    name "José Telles Zafra"
   end
 end

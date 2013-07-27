@@ -3,14 +3,14 @@
 FactoryGirl.define do
   factory :participant do
     address "Rua XYZ"
-    phone "4463-9938"
-    cel_phone "98873-9217"
-    email "joao@ecc.com"
-    church "IP PN"
+    full_name  { Faker::Name.name }
+    name       { "#{Faker::Name.first_name} da Maria" }
+    email      { Faker::Internet.email "#{name}" }
+    phone      { Faker::PhoneNumber.phone_number }
+    cel_phone  { Faker::PhoneNumber.phone_number }
+    church "IPB Parque"
     couple "Telles da Vera"
     health_obs "Alergia à quiabo"
-    children 1
-    name "João da Maria"
-    full_name "João da Silva"
+    children SecureRandom.random_number(5)
   end
 end
