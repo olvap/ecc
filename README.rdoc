@@ -4,8 +4,8 @@ Sistema personalizado para auxílio na secretaria do Encontro de Casais com Cris
 
 == Encontristas:
 
-=== Atributos 
-  
+=== Atributos
+
   Endereço, Telefone, Celular, Email, Igreja, Casal, Obs. Saúde,
   Qtd. Filhos, Nome, Nome Completo
 
@@ -21,8 +21,8 @@ Sistema personalizado para auxílio na secretaria do Encontro de Casais com Cris
 
 == Equipe:
 
-=== Atributos 
-  
+=== Atributos
+
   Telefone, Celular, Email, Igreja, Nome
 
 === Menu
@@ -45,4 +45,9 @@ Obs.: Para transformar mm em px, basta multiplicar por 38 e dividir por 10
 
 == TODO
 
-Criar css de impressão para relações gerais, crachás, etiquetas, dormitórios e lava-louça
+* Criar css de impressão para relações gerais
+* Criar css de impressão para crachás
+* Criar css de impressão para etiquetas
+* Implementar impressão individual
+* Implementar Dormitórios
+* Implementar Relação Lava-Louça(talvez não precise)
