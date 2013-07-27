@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :team do
-    name       { Faker::Name.name }
+    name       { "#{Faker::Name.name } da #{Faker::Name.name}" }
     email      { Faker::Internet.email "#{name}" }
     phone      { Faker::PhoneNumber.phone_number }
     cel_phone  { Faker::PhoneNumber.phone_number }

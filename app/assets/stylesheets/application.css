@@ -19,7 +19,6 @@
   height: 92.72px;
   float: left;
 }
-
 .tag p {
   text-align: center;
   margin-top: 5px;
@@ -31,4 +30,13 @@
   width: 337.82px;
   height: 193.04px;
   float: left;
+}
+.name_tag div {
+  font-size: 18px;
+  margin: 15px 0 0 10px;
+}
+.name_tag p {
+  text-align: center;
+  margin-top: 45px;
+  font-size: 22px;
 }

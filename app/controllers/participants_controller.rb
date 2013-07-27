@@ -1,17 +1,19 @@
 # -*- encoding : utf-8 -*-
 class ParticipantsController < ApplicationController
-  
+
   before_filter :load, only: [:show, :edit, :update, :destroy]
-  before_filter :load_collection, only: [:index, :tags, :name_tags]
+  before_filter :load_collection, only: [:index, :tags]
 
   def index; end
 
   def tags; end
 
-  def name_tags; end
+  def name_tags
+    @people = Participant.scoped
+  end
 
   def show; end
-    
+
   def edit; end
 
   def update

@@ -1,10 +1,1 @@
-<div class="row">
-  <% @teams.each_with_index do |team| %>
-    <div class="name_tag">
-      <%= team.name %>
-    </div>
-    <div class="name_tag">
-      <%= team.wife_name %>
-    </div>    
-  <% end %>
-</div>
+<%= render "layouts/name_tags" %>
