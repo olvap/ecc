@@ -20,6 +20,12 @@
   float: left;
 }
 
+.tag p {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
 .name_tag {
   border: 1px solid;
   width: 337.82px;

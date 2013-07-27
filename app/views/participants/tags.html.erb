@@ -1,10 +1,12 @@
 <div class="row">
-  <% @participants.each_with_index do |participant| %>    
+  <% @participants.each_with_index do |participant| %>
       <div class="tag">
-        <%= participant.name %>
+        <p><%= image_tag("hearts.png") %></p>
+        <p><%= participant.name %></p>
       </div>
       <div class="tag">
-        <%= participant.wife_name %>
-      </div>      
+        <p><%= image_tag("hearts.png") %></p>
+        <p><%= participant.wife_name %></p>
+      </div>
   <% end %>
-</div>  
+</div>
