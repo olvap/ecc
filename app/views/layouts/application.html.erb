@@ -16,15 +16,61 @@
   	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
 
   	<%= stylesheet_link_tag    "application" %>
+    <%= stylesheet_link_tag    "print" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
+    <style type="text/css">
+
+      @media print
+      {
+        #non-printable { display: none; }
+        #printButton { display: none; }
+        .row { width: 100%; }
+        #printable { display: block; width: 100%;}
+
+        .name_tag {
+          border: 1px solid;
+          width: 244.36pt; /* Original size here is 253.36pt */
+          height: 144.78pt;
+          float: left;
+        }
+        .name_tag div {
+          font-size: 16px;
+          margin: 15px 0 0 10px;
+        }
+        .name_tag p {
+          text-align: center;
+          margin-top: 45px;
+          font-size: 28px;
+        }
+
+        .tag {
+          border: 1px solid;
+          width: 203.46px; /* Original size here is 253.46px */
+          height: 92.72px;
+          float: left;
+        }
+        .tag div {
+          text-align: center;
+          margin-top: 5px;
+        }
+        .tag p {
+          text-align: center;
+          margin-top: 12px;
+          font-size: 20px;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <%= render "layouts/navbar" %>
+    <div id="non-printable">
+      <%= render "layouts/navbar" %>
 
-    <div class="row">
-      <div class="small-12 columns"><%= yield %></div>
+      <div class="row">
+        <div class="small-12 columns"><%= yield %></div>
+      </div>
+
     </div>
 
     <%= javascript_include_tag "application" %>

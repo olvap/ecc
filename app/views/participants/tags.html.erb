@@ -1,12 +1,15 @@
-<div class="row">
-  <% @participants.each_with_index do |participant| %>
-      <div class="tag">
-        <div><%= image_tag("hearts.png") %></div>
-        <p><%= participant.name %></p>
-      </div>
-      <div class="tag">
-        <div><%= image_tag("hearts.png") %></div>
-        <p><%= participant.wife_name %></p>
-      </div>
-  <% end %>
+<input type="button" value="Imprimir" onclick="window.print()" id="printButton"/>
+<div id="printable">
+  <div class="row">
+    <% @participants.each_with_index do |participant| %>
+        <div class="tag">
+          <div><%= image_tag("hearts.png") %></div>
+          <p><%= participant.name %></p>
+        </div>
+        <div class="tag">
+          <div><%= image_tag("hearts.png") %></div>
+          <p><%= participant.wife_name %></p>
+        </div>
+    <% end %>
+  </div>
 </div>

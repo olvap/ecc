@@ -1,18 +1,21 @@
-<div class="row">
-  <% @people.each do |person| %>
-    <div class="name_tag">
-      <div>
-        <%= image_tag("hearts.png") %>
-        44º ECC - Maranata
+<input type="button" value="Imprimir" onclick="window.print()" id="printButton"/>
+<div id="printable">
+  <div class="row">
+    <% @people.each do |person| %>
+      <div class="name_tag">
+        <div>
+          <%= image_tag("hearts.png") %>
+          47º ECC - Maranata
+        </div>
+        <p><%= person.name %></p>
       </div>
-      <p><%= person.name %></p>
-    </div>
-    <div class="name_tag">
-      <div>
-        <%= image_tag("hearts.png") %>
-        44º ECC - Maranata
+      <div class="name_tag">
+        <div>
+          <%= image_tag("hearts.png") %>
+          47º ECC - Maranata
+        </div>
+        <p><%= person.wife_name %></p>
       </div>
-      <p><%= person.wife_name %></p>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>
