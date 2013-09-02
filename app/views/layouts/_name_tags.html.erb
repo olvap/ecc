@@ -1,17 +1,17 @@
 <input type="button" value="Imprimir" onclick="window.print()" id="printButton"/>
-<div id="printable">
+<div id="printable-name-tag">
   <div class="row">
-    <% @people.each do |person| %>
-      <div class="name_tag">
+    <% @people.each_with_index do |person, i| %>
+      <div class="name_tag <%= 'space' if i % 5 == 0  && i > 0 %>">
         <div>
-          <%= image_tag("hearts.png") %>
+          <%= image_tag("hearts.png") %>&nbsp;&nbsp;&nbsp;
           47º ECC - Maranata
         </div>
         <p><%= person.name %></p>
       </div>
-      <div class="name_tag">
+      <div class="name_tag <%= 'space' if i % 5 == 0 && i > 0 %>">
         <div>
-          <%= image_tag("hearts.png") %>
+          <%= image_tag("hearts.png") %>&nbsp;&nbsp;&nbsp;
           47º ECC - Maranata
         </div>
         <p><%= person.wife_name %></p>

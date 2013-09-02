@@ -12,6 +12,7 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
+.space { margin-top: 57px;}
 
 .tag {
   border: 1px solid;
@@ -42,5 +43,10 @@
 .name_tag p {
   text-align: center;
   margin-top: 45px;
-  font-size: 28px;
+  font-size: 30px;
+  font-weight: bold;
+}
+#printable-tag {
+  display: block;
+  margin: 7px 0 0 0;
 }

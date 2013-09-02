@@ -25,13 +25,21 @@
       {
         #non-printable { display: none; }
         #printButton { display: none; }
-        .row { width: 100%; }
-        #printable { display: block; width: 100%;}
+        .row { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+        #printable-name-tag {
+          display: block;
+          margin: 5px 0 0 15px;
+        }
+        #printable-tag {
+          display: block;
+          margin: 7px 0 0 0;
+        }
+        .space { margin-top: 57px;}
 
         .name_tag {
-          border: 1px solid;
-          width: 244.36pt; /* Original size here is 253.36pt */
-          height: 144.78pt;
+          /*border: 1px solid;*/
+          width: 240.00pt; /* Original size here is 253.36pt */
+          height: 135.00pt; /* Original size here is 144.78pt */
           float: left;
         }
         .name_tag div {
@@ -41,7 +49,8 @@
         .name_tag p {
           text-align: center;
           margin-top: 45px;
-          font-size: 28px;
+          font-size: 30px;
+          font-weight: bold;
         }
 
         .tag {

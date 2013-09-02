@@ -1,7 +1,7 @@
 <input type="button" value="Imprimir" onclick="window.print()" id="printButton"/>
-<div id="printable">
+<div id="printable-tag">
   <div class="row">
-    <% @participants.each_with_index do |participant| %>
+    <% @participants.each do |participant| %>
         <div class="tag">
           <div><%= image_tag("hearts.png") %></div>
           <p><%= participant.name %></p>
