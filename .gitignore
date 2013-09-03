@@ -19,3 +19,4 @@ public/uploads*
 public/assets*
 public/*.jpg
 spec/support/uploads/
+config/settings.yml

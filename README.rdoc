@@ -48,6 +48,6 @@ Sistema personalizado para auxílio na secretaria do Encontro de Casais com Cris
 * Testar css de impressão para relações gerais
 * Verificar impressão de crachás(alinhamento horizontal)
 * Ajustar impressão de etiquetas(alinhamento horizontal)
-* Implementar autenticação com usuário e senha
+* Melhorar css no application.html.erb
 * Implementar Dormitórios
 * Implementar Relação Lava-Louça(talvez não precise)
