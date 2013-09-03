@@ -46,8 +46,8 @@ Sistema personalizado para auxílio na secretaria do Encontro de Casais com Cris
 == TODO
 
 * Criar css de impressão para relações gerais
-* Criar css de impressão para crachás
-* Criar css de impressão para etiquetas
+* Ajustar css de impressão de crachás em letter
+* Ajustar css de impressão de etiquetas
 * Implementar impressão individual
 * Implementar Dormitórios
 * Implementar Relação Lava-Louça(talvez não precise)
