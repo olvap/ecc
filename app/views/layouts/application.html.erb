@@ -23,23 +23,29 @@
 
       @media print
       {
-        #non-printable { display: none; }
+        .non-printable { display: none; }
         #printButton { display: none; }
         .row { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
-        #printable-name-tag {
-          display: block;
-          margin: 5px 0 0 15px;
-        }
+
+        /* TABLE */
+        .printable-table { display: block; }
+        .printable-table table { border-collapse: collapse; }
+        .printable-table table tbody td { border: 1px solid; }
+        tr { page-break-inside:avoid; }
+        td { page-break-inside:avoid; }
+        /* END OF TABLE */
+
+        /* NAME TAGS */
+        #printable-name-tag { display: block; }
         #printable-tag {
           display: block;
         }
-        .space { margin-top: 57px;}
-
         .name_tag {
           /*border: 1px solid;*/
           width: 240.00pt; /* Original size here is 336px */
           height: 135.00pt; /* Original size here is 192px */
           float: left;
+          page-break-inside: avoid;
         }
         .name_tag div {
           font-size: 16px;
@@ -51,13 +57,16 @@
           font-size: 30px;
           font-weight: bold;
         }
+        /* END OF NAME TAGS */
 
+        /* TAGS */
         .tag {
           margin: 0 0 0 18px;
           border: 1px solid;
           width: 205px;
           height: 87.57px;
           float: left;
+          page-break-inside: avoid;
         }
         .tag div {
           text-align: center;
@@ -68,12 +77,13 @@
           margin-top: 12px;
           font-size: 20px;
         }
+        /* END OF TAGS */
       }
     </style>
   </head>
 
   <body>
-    <div id="non-printable">
+    <div class="non-printable">
       <%= render "layouts/navbar" %>
 
       <div class="row">

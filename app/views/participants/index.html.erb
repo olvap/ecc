@@ -1,31 +1,34 @@
-<h1>Encontristas</h1>
-<%= link_to "Adicionar", new_participant_path %>
+<h1 class="non-printable">Encontristas</h1>
+<%= link_to "Adicionar", new_participant_path, class: "non-printable" %>
+<%= link_to_function "Imprimir", "window.print()", id: "printButton" %>
 <br/><br/>
-<table>
-  <thead>
-    <tr>
-      <th>Nome</th>
-      <th>Casal Acomp.</th>
-      <th>Igreja</th>
-      <th>Tel.</th>
-      <th>Saúde</th>
-      <th><th>
-      <th><th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @participants.each do |participant| %>
+<div class="printable-table">
+  <table>
+    <thead>
       <tr>
-        <td><%= link_to participant.name, participant_path(participant) %></td>
-        <td><%= participant.couple %></td>
-        <td><%= participant.church %></td>
-        <td><%= participant.phone %></td>
-        <td><%= participant.health_obs %></td>
-        <td><%= link_to "Editar", edit_participant_path(participant) %></td>
-        <td><%= link_to 'Apagar', participant_path(participant), confirm: 'Tem certeza?', method: :delete %></td>
-        <td><%= link_to 'Crachá', name_tags_participants_path(ids: participant.id) %></td>
-        <td><%= link_to 'Etiqueta', tags_participants_path(ids: participant.id) %></td>
+        <th>Nome</th>
+        <th>Casal Acomp.</th>
+        <th>Igreja</th>
+        <th>Tel.</th>
+        <th>Saúde</th>
+        <th class="non-printable"><th>
+        <th class="non-printable"><th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      <% @participants.each do |participant| %>
+        <tr>
+          <td><%= link_to participant.name, participant_path(participant) %></td>
+          <td><%= participant.couple %></td>
+          <td><%= participant.church %></td>
+          <td><%= participant.phone %></td>
+          <td><%= participant.health_obs %></td>
+          <td class="non-printable"><%= link_to "Editar", edit_participant_path(participant) %></td>
+          <td class="non-printable"><%= link_to 'Apagar', participant_path(participant), confirm: 'Tem certeza?', method: :delete %></td>
+          <td class="non-printable"><%= link_to 'Crachá', name_tags_participants_path(ids: participant.id) %></td>
+          <td class="non-printable"><%= link_to 'Etiqueta', tags_participants_path(ids: participant.id) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

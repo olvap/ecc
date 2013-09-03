@@ -12,14 +12,10 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
-.space { margin-top: 57px;}
 
-/* TAG STYLES */
+/* TAG */
 #printable-tag .row {
   display: block;
-/*  width: 816.37px;
-  height: 1054.48px;
-  border: 1px solid;*/
 }
 .tag {
   margin: 0 0 0 18px;
@@ -38,10 +34,10 @@
   font-size: 20px;
   font-weight: bold;
 }
-/* END OF TAG STYLES */
+/* END OF TAG */
 
 
-/* NAME TAG STYLES */
+/* NAME TAG */
 .name_tag {
   border: 1px solid;
   width: 337.82px;
@@ -50,7 +46,6 @@
 }
 .name_tag div {
   font-size: 16px;
-  margin: 15px 0 0 10px;
 }
 .name_tag p {
   text-align: center;
@@ -58,4 +53,4 @@
   font-size: 30px;
   font-weight: bold;
 }
-/* END OF NAME TAG STYLES */
+/* END OF NAME TAG */
