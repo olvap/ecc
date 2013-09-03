@@ -48,6 +48,6 @@ class TeamsController < ApplicationController
   end
 
   def load_people
-    @people = params[:ids].present? ? Team.where("ids in (?)", params[:ids]) : Team.scoped
+    @people = params[:ids].present? ? Team.where("id in (?)", params[:ids]) : Team.scoped
   end
 end

@@ -10,6 +10,7 @@
       <th>Tel.</th>
       <th>Saúde</th>
       <th><th>
+      <th><th>
     </tr>
   </thead>
   <tbody>
@@ -22,6 +23,8 @@
         <td><%= participant.health_obs %></td>
         <td><%= link_to "Editar", edit_participant_path(participant) %></td>
         <td><%= link_to 'Apagar', participant_path(participant), confirm: 'Tem certeza?', method: :delete %></td>
+        <td><%= link_to 'Crachá', name_tags_participants_path(ids: participant.id) %></td>
+        <td><%= link_to 'Etiqueta', tags_participants_path(ids: participant.id) %></td>
       </tr>
     <% end %>
   </tbody>

@@ -9,6 +9,7 @@
       <th>Cel.</th>
       <th>Igreja</th>
       <th><th>
+      <th><th>
     </tr>
   </thead>
   <tbody>
@@ -20,6 +21,7 @@
         <td><%= team.church %></td>
         <td><%= link_to "Editar", edit_team_path(team) %></td>
         <td><%= link_to 'Apagar', team_path(team), confirm: 'Tem certeza?', method: :delete %></td>
+        <td><%= link_to 'Crachá', name_tags_teams_path(ids: team.id) %></td>
       </tr>
     <% end %>
   </tbody>

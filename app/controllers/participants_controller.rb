@@ -48,6 +48,6 @@ class ParticipantsController < ApplicationController
   end
 
   def load_people
-    @people = params[:ids].present? ? Participant.where("ids in (?)", params[:ids]) : Participant.scoped
+    @people = params[:ids].present? ? Participant.where("id in (?)", params[:ids]) : Participant.scoped
   end
 end
