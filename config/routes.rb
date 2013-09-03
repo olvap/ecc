@@ -1,6 +1,6 @@
 Ecc::Application.routes.draw do
-  
-  root to: 'participants#index'
+
+  root to: 'teams#index'
 
   resources :participants do
     collection do
@@ -13,6 +13,6 @@ Ecc::Application.routes.draw do
     collection do
       get :tags
       get :name_tags
-    end    
+    end
   end
 end
