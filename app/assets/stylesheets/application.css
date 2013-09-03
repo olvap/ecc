@@ -14,10 +14,18 @@
  */
 .space { margin-top: 57px;}
 
+/* TAG STYLES */
+#printable-tag .row {
+  display: block;
+/*  width: 816.37px;
+  height: 1054.48px;
+  border: 1px solid;*/
+}
 .tag {
+  margin: 0 0 0 18px;
   border: 1px solid;
-  width: 253.46px;
-  height: 92.72px;
+  width: 252px;
+  height: 87.57px;
   float: left;
 }
 .tag div {
@@ -28,8 +36,12 @@
   text-align: center;
   margin-top: 12px;
   font-size: 20px;
+  font-weight: bold;
 }
+/* END OF TAG STYLES */
 
+
+/* NAME TAG STYLES */
 .name_tag {
   border: 1px solid;
   width: 337.82px;
@@ -46,7 +58,4 @@
   font-size: 30px;
   font-weight: bold;
 }
-#printable-tag {
-  display: block;
-  margin: 7px 0 0 0;
-}
+/* END OF NAME TAG STYLES */

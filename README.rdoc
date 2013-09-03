@@ -37,14 +37,11 @@ Sistema personalizado para auxílio na secretaria do Encontro de Casais com Cris
 
 === Medidas
 
-* Etiquetas (24,4mm x 66,7mm) ou 92.72px e 253.46px
+* Etiquetas (24,4mm x 66,7mm) ou 84.66px e 252.09px
 
-* Crachás (50,8mm x 88,9mm) ou 193.04px(144.78pt) e 337.82px(253.36pt)
+* Crachás (50,8mm x 88,9mm) ou 192px e 336px
 
-* Formatar para folha ofício(5 crachás) 297 x 220
-
-Obs.: Para transformar mm em px, basta multiplicar por 38 e dividir por 10
-      Para transformar px em pt basta dividir por 8 e multiplicar o resultado por 6
+* Formatar para folha ofício(5 crachás)
 
 == TODO
 

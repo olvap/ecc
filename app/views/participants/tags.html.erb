@@ -1,4 +1,4 @@
-<input type="button" value="Imprimir" onclick="window.print()" id="printButton"/>
+<%= link_to_function "Imprimir", "window.print()", id: "printButton" %>
 <div id="printable-tag">
   <div class="row">
     <% @participants.each do |participant| %>
