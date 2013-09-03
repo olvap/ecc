@@ -1,4 +1,4 @@
-<%= link_to_function "Imprimir", "window.print()", id: "printButton" %>
+<%= link_to_function "Imprimir", "window.print()", id: "printButton", class: "button small" %>
 <div id="printable-name-tag">
   <div class="row">
     <% @people.each_with_index do |person, i| %>
