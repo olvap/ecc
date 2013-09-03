@@ -2,15 +2,15 @@
 class TeamsController < ApplicationController
 
   before_filter :load, only: [:show, :edit, :update, :destroy]
-  before_filter :load_collection, only: [:index, :tags]
+  before_filter :load_people, only: [:tags, :name_tags]
 
-  def index; end
+  def index
+    @teams = Team.scoped
+  end
 
   def tags; end
 
-  def name_tags
-    @people = Team.scoped
-  end
+  def name_tags; end
 
   def show; end
 
@@ -47,7 +47,7 @@ class TeamsController < ApplicationController
     @team = Team.find params[:id]
   end
 
-  def load_collection
-    @teams = Team.scoped
+  def load_people
+    @people = params[:ids].present? ? Team.where("ids in (?)", params[:ids]) : Team.scoped
   end
 end

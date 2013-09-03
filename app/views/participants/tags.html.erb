@@ -1,14 +1,14 @@
 <%= link_to_function "Imprimir", "window.print()", id: "printButton" %>
 <div id="printable-tag">
   <div class="row">
-    <% @participants.each do |participant| %>
+    <% @people.each do |person| %>
         <div class="tag">
           <div><%= image_tag("hearts.png") %></div>
-          <p><%= participant.name %></p>
+          <p><%= person.name %></p>
         </div>
         <div class="tag">
           <div><%= image_tag("hearts.png") %></div>
-          <p><%= participant.wife_name %></p>
+          <p><%= person.wife_name %></p>
         </div>
     <% end %>
   </div>

@@ -2,15 +2,15 @@
 class ParticipantsController < ApplicationController
 
   before_filter :load, only: [:show, :edit, :update, :destroy]
-  before_filter :load_collection, only: [:index, :tags]
+  before_filter :load_people, only: [:tags, :name_tags]
 
-  def index; end
+  def index
+    @participants = Participant.scoped
+  end
 
   def tags; end
 
-  def name_tags
-    @people = Participant.scoped
-  end
+  def name_tags; end
 
   def show; end
 
@@ -47,7 +47,7 @@ class ParticipantsController < ApplicationController
     @participant = Participant.find params[:id]
   end
 
-  def load_collection
-    @participants = Participant.scoped
+  def load_people
+    @people = params[:ids].present? ? Participant.where("ids in (?)", params[:ids]) : Participant.scoped
   end
 end
