@@ -13,6 +13,40 @@
 
 ActiveRecord::Schema.define(:version => 20130625140036) do
 
+  create_table "dinamicas", :force => true do |t|
+    t.string   "cor"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "dinossauros", :force => true do |t|
+    t.string   "nome_do_homem"
+    t.string   "telefone"
+    t.string   "igreja"
+    t.string   "email"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.string   "genero"
+    t.integer  "dinamica_id"
+    t.string   "nome_da_mulher"
+  end
+
+  create_table "encontristas", :force => true do |t|
+    t.string   "nome_do_homem"
+    t.string   "endereco"
+    t.string   "telefone"
+    t.string   "celular"
+    t.string   "email"
+    t.string   "igreja"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.string   "casal"
+    t.string   "genero"
+    t.text     "obs_saude"
+    t.integer  "dinamica_id"
+    t.string   "nome_da_mulher"
+  end
+
   create_table "participants", :force => true do |t|
     t.string   "address"
     t.string   "phone"
@@ -38,6 +72,13 @@ ActiveRecord::Schema.define(:version => 20130625140036) do
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "password_digest"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
 end
