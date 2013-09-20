@@ -18,15 +18,15 @@
   display: block;
 }
 .tag {
-  margin: 0 0 0 18px;
+  margin: 0 21px 0 0;
   border: 1px solid;
   width: 252px;
-  height: 87.57px;
+  height: 90px;
   float: left;
 }
 .tag div {
   text-align: center;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .tag p {
   text-align: center;
