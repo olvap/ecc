@@ -5,6 +5,7 @@ FactoryGirl.define do
     address "Rua XYZ"
     full_name  { Faker::Name.name }
     name       { "#{Faker::Name.first_name} da Maria" }
+    nickname   { "#{Faker::Name.first_name} da Mamá" }
     email      { Faker::Internet.email "#{name}" }
     phone      { Faker::PhoneNumber.phone_number }
     cel_phone  { Faker::PhoneNumber.phone_number }

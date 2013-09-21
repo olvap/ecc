@@ -4,11 +4,11 @@
     <% @people.each do |person| %>
         <div class="tag">
           <div><%= image_tag("hearts.png") %></div>
-          <p><%= person.name %></p>
+          <p><%= person.husband_full_name %></p>
         </div>
         <div class="tag">
           <div><%= image_tag("hearts.png") %></div>
-          <p><%= person.wife_name %></p>
+          <p><%= person.wife_full_name %></p>
         </div>
     <% end %>
   </div>

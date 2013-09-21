@@ -2,19 +2,19 @@
 <div id="printable-name-tag">
   <div class="row">
     <% @people.each_with_index do |person, i| %>
-      <div class="name_tag <%= 'space' if i % 5 == 0  && i > 0 %>">
+      <div class="name_tag">
         <div>
           <%= image_tag("hearts.png") %>&nbsp;&nbsp;&nbsp;
           47º ECC - Maranata
         </div>
-        <p><%= person.name %></p>
+        <p><%= person.husband_full_name %></p>
       </div>
-      <div class="name_tag <%= 'space' if i % 5 == 0 && i > 0 %>">
+      <div class="name_tag">
         <div>
           <%= image_tag("hearts.png") %>&nbsp;&nbsp;&nbsp;
           47º ECC - Maranata
         </div>
-        <p><%= person.wife_name %></p>
+        <p><%= person.wife_full_name %></p>
       </div>
     <% end %>
   </div>

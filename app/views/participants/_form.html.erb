@@ -1,10 +1,17 @@
 <%= form_for @participant do |f| %>
   <%= error_messages_for @participant %>
-    
+
   <div class="row">
     <div class="large-4 columns">
       <%= f.label :name, 'Nome' %>
       <%= f.text_field :name %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-4 columns">
+      <%= f.label :nickname, 'Apelido' %>
+      <%= f.text_field :nickname %>
     </div>
   </div>
 

@@ -17,4 +17,12 @@
 # -*- encoding : utf-8 -*-
 class Team < ActiveRecord::Base
   include Person
+
+  def wife_full_name
+    wife(name) + " do " + name.split(" da ")[0]
+  end
+
+  def husband_full_name
+    name
+  end
 end

@@ -48,6 +48,7 @@
 .name_tag div {
   font-size: 17px;
   margin: 10px 0 0 10px;
+  height: 1px;
   font-weight: bold;
 }
 .name_tag p {
