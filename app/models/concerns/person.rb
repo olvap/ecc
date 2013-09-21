@@ -11,11 +11,6 @@ module Person
 
   def wife_name
     arr = name.split(" da ")
-    if arr.count == 2
-      arr[1] + " do " + arr[0]
-    else
-      new_arr = arr[1].split("(")
-      new_arr[0] + " do " + arr[0] + " (" + arr[2].delete(")") + " do " + new_arr[1] + ")"
-    end
+    arr[1] + " do " + arr[0]
   end
 end
