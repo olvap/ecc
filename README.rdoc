@@ -45,9 +45,14 @@ Sistema personalizado para auxílio na secretaria do Encontro de Casais com Cris
 
 == TODO
 
-* Testar css de impressão para relações gerais
-* Verificar impressão de crachás(alinhamento horizontal)
-* Ajustar impressão de etiquetas(alinhamento horizontal)
+
+* Papel etiqueta:
+- Margem do topo: 12mm ou 45px
+- Margem da lateral 5mm ou 19px
+- Largura de 253px e altura 94px
+- Espaçamento 3mm ou 11px na lateral e abaixo não tem
+
+* Imprimir 3 iguais na linha das etiquetas(tags)
 * Melhorar css no application.html.erb
 * Implementar Dormitórios
 * Implementar Relação Lava-Louça(talvez não precise)
