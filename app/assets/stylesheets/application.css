@@ -14,15 +14,24 @@
  */
 
 /* TAG */
+#printable-tag {
+  display: block;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  width: 1056px;
+  border: 1px solid;
+}
 #printable-tag .row {
   display: block;
+  margin: 40px 5px 0 0;
 }
+
 .tag {
-  margin: 0 21px 0 0;
+  margin: 0 0 0 11px;
   border: 1px solid;
-  width: 252px;
-  height: 90px;
+  width: 253px;
+  height: 105px;
   float: left;
+  page-break-inside: avoid;
 }
 .tag div {
   text-align: center;
@@ -32,7 +41,7 @@
 .tag p {
   text-align: center;
   margin-top: 12px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 /* END OF TAG */
