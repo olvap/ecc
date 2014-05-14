@@ -10,30 +10,34 @@ module Person
   end
 
   def wife_full_name
-    wife_name + " do " + husband_name
+    "#{wife_name} do #{husband_name}"
   end
 
   def husband_full_name
-    husband_name + " da " + wife_name
+    "#{husband_name} da #{wife_name}"
   end
 
   def wife_name
-    wife(nickname) + " (" + wife(name) + ")"
+    "#{wife(nickname)} (#{wife(name)})"
   end
 
   def husband_name
-    husband(nickname) + " (" + husband(name) + ")"
+    "#{husband(nickname)} (#{husband(name)})"
   end
 
   def husband(naming)
     if naming.present?
       naming.split(" da ")[0]
+    else
+      ""
     end
   end
 
   def wife(naming)
     if naming.present?
       naming.split(" da ")[1]
+    else
+      ""
     end
   end
 end
