@@ -22,12 +22,7 @@
 class Participant < ActiveRecord::Base
   include Person
   attr_accessible :children, :couple, :full_name
-  validates_presence_of :full_name, :couple, :nickname
-  validates_format_of :nickname, with: /[a-zA-Z]+\s{1}da{1}\s{1}[a-zA-Z]+/, message: "verifique o formato, exemplo: Tchuco da Tchuca"
-
-  def full_name
-
-    nickname + " (" + name + ")"
-  end
-
+  validates_presence_of :full_name, :couple
+  validates_format_of :nickname, with: /[a-zA-Z]+\s{1}da{1}\s{1}[a-zA-Z]+/,
+  message: "verifique o formato, exemplo: Tchuco da Tchuca", if: Proc.new { |p| p.nickname.present? }
 end
