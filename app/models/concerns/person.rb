@@ -26,10 +26,14 @@ module Person
   end
 
   def husband(naming)
-    naming.split(" da ")[0]
+    if naming.present?
+      naming.split(" da ")[0]
+    end
   end
 
   def wife(naming)
-    naming.split(" da ")[1]
+    if naming.present?
+      naming.split(" da ")[1]
+    end
   end
 end
