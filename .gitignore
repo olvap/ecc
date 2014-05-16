@@ -20,3 +20,4 @@ public/assets*
 public/*.jpg
 spec/support/uploads/
 config/settings.yml
+config/database.yml
